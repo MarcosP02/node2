@@ -1,0 +1,32 @@
+/* mapas*/
+$standard:(
+    /* key -valor*/
+    color-standard: black,
+    bg-standard: white,
+    border-standard: 1px solid green,
+    font: standard 44px,
+    );
+
+
+
+
+
+
+
+
+
+$premiun:(
+     /* key -valor*/
+     color-premiun: pink,
+     bg-premiun: gold,
+
+     );
+
+
+     .standard{
+         background-color: map-get($map: $standard, $key:bg-standard );
+     }
+
+     .premiun{
+        background-color: map-get($map: $premiun, $key: bg-premiun );
+    }

@@ -1,0 +1,19 @@
+/*condicionales*/
+
+@mixin condicion($colores){
+    background-color: $colores;
+    @if $colores == orange {
+        border:1px solid black;
+
+    }
+@else{
+    border: 2px solid pink;
+    font-size: 50px;
+}
+}
+.boton-uno{
+    @include condicion(orange)
+}
+.boton-dos{
+    @include condicion(pink)
+}

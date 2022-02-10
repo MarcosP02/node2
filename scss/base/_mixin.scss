@@ -1,0 +1,34 @@
+/* mixin 
+
+
+@mixin botones {
+width: 300px;
+background-color: bisque;
+border: 3px solid black;    
+}
+
+.boton{
+    @include botones;
+}
+*/
+
+@mixin animaciones($transformaciones) {
+    transform: $transformaciones;
+
+
+}
+.section{
+    @include animaciones(scale(50px));
+}
+@mixin medidas($ancho){
+    width: $ancho;
+    height: 300px;
+  }
+ 
+  .clase1{
+    @include medidas(500px);
+  }
+  .clase2{
+    @include medidas(00px);
+  }
+ 
